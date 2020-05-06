@@ -1,0 +1,11 @@
+<div class="search-bar">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="" value="" (input)="filterDocuments($event)">
+    <mat-icon matPrefix>search</mat-icon>
+  </mat-form-field>
+</div>
+<div class="post-result-list-container">
+  <div class="column">
+    <app-card *ngFor="let item of posts " [post]="item" (click)="goToPost(item.id)"></app-card>
+  </div>
+</div>

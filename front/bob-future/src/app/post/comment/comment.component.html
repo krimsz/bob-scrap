@@ -1,0 +1,4 @@
+<mat-card class="comment">
+  <mat-card-subtitle>By: {{comment.author}} on {{comment.date | date}}</mat-card-subtitle>
+  <mat-card-content [innerHTML]="comment.content"></mat-card-content>
+</mat-card>

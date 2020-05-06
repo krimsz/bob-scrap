@@ -1,0 +1,20 @@
+.card-content {
+  overflow: scroll;
+}
+mat-card {
+  margin-top: 24px;
+  overflow: hidden;
+}
+app-card {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+}
+
+div :hover {
+  background-color: rgb(93, 97, 90);
+  cursor: pointer;
+}
+mat-card-content {
+  overflow: hidden !important;
+}

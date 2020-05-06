@@ -1,0 +1,2 @@
+FROM nginx:1.17.1-alpine
+COPY front/bob-future/dist/bob-future /usr/share/nginx/html

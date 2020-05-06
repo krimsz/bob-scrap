@@ -1,0 +1,10 @@
+<mat-card>
+  <mat-card-title>{{post.title}}</mat-card-title>
+  <mat-card-subtitle>By: {{post.author}} on {{post.date | date}}</mat-card-subtitle>
+  <mat-card-content [innerHTML]="post.content"></mat-card-content>
+</mat-card>
+<div class="comment-container">
+  <h2 *ngIf="post.comments.length > 0">Comments</h2>
+  <app-comment *ngFor="let comment of post.comments" [comment]="comment"></app-comment>
+</div>
+<h3 class="no-comments" *ngIf="post.comments.length === 0">There are no comments for this post</h3>
